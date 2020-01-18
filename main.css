@@ -143,7 +143,7 @@ header .user-img-holder img {
 }
 
 .tile-gallery{
-  background: linear-gradient(rgba(1,1,1, 0.3), rgba(1,1,1, 0.3)),url('/images/seaside-994605.jpg') center/cover;
+  background: linear-gradient(rgba(1,1,1, 0.3), rgba(1,1,1, 0.3)),url('./images/seaside-994605.jpg') center/cover;
   grid-area: gallery;
 }
 
