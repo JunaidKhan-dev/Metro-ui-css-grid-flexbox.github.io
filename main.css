@@ -66,7 +66,7 @@ header .user-img-holder img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: .5rem ;
-  grid-template-rows: repeat(3, 100px);
+  grid-template-rows: repeat(3, 144px);
   grid-template-areas: 
   "desktop desktop settings settings camera"
   "favourite twitter places gallery gallery"
@@ -89,6 +89,7 @@ header .user-img-holder img {
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+  height: 100%;
   
 }
 
