@@ -1,0 +1,222 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+ font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+main {
+
+  height: 70vh;
+  width: 80vw;
+  padding: 30px;
+  color: white;
+  background-color: #246D38;
+  font-weight: 100;
+  /* overflow: hidden; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .user-img-holder img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.user-img-holder{
+  display: flex;
+  letter-spacing: 2px;
+}
+.user-container h3{
+  text-align: right;
+  margin-right: 4.5rem;
+}
+#titles-container{
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.left-tiles-container{
+  flex: 1 0 calc(60% - 7rem);
+  margin-right: 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: .5rem ;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas: 
+  "desktop desktop settings settings camera"
+  "favourite twitter places gallery gallery"
+  "browser email calender calender drive";
+}
+
+.right-tiles-container{
+  flex: 1 0 calc(30%);
+  margin-right: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5rem ;
+  grid-template-areas: "facebook facetime"
+  "task explorer"
+  "media media";
+} 
+
+.tile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  
+}
+
+.icon-holder{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
+.icon-text{
+ position: absolute;
+  top: 80%;
+  left: 5%;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+/* left title section */
+.tile-show-desktop{
+  background: #4290FF;
+  grid-area: desktop;
+}
+
+.tile-settings{
+  background: #E75F20;
+    grid-area: settings;
+}
+
+.tile-camera{
+   background: rgb(185, 3, 42);
+    grid-area: camera;
+}
+
+
+.tile-favourite{
+  background: #61B714;
+  grid-area: favourite;
+}
+
+
+.tile-twitter{
+  background: #79b1fe;
+  grid-area: twitter;
+}
+
+.tile-places{
+  background: #DBB701;
+  grid-area: places;
+}
+
+.tile-gallery{
+  background: linear-gradient(rgba(1,1,1, 0.3), rgba(1,1,1, 0.3)),url('/images/seaside-994605.jpg') center/cover;
+  grid-area: gallery;
+}
+
+.tile-browser{
+  background: #DA312D;
+  grid-area: browser;
+}
+.tile-email{
+   background: #E75F20;
+   grid-area: email;
+}
+
+.tile-calender{
+  background: #4290FF;
+  grid-area: calender;
+}
+.tile-skyDrive{
+   background: #61B714;
+   grid-area: drive;
+}
+
+/* right titles  section */
+.tile-facebook{
+  background: #4290FF;
+  grid-area: facebook;
+}
+
+.tile-facetime{
+   background: #79b1fe;
+   grid-area: facetime;
+}
+
+.tile-task{
+  grid-area: task;
+  background: rgb(185, 3, 42);
+}
+
+.tile-explorer{
+  grid-area: explorer;
+  background: rgb(202, 49, 74);
+}
+
+.tile-Media{
+  grid-area: media;
+  background: #DBB701;
+}
+
+/* special cases title calender */
+
+.title-email-date-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.date-container h1{
+  font-size: 3rem;
+  margin-left: -1rem;
+  margin-top: 1rem;
+}
+
+.date-container p{
+   margin-left: -1rem;
+}
+
+.calender-icon{
+  font-size: 1.4rem;
+  margin-left:1rem ;
+  margin-bottom: .7rem;
+}
+/* logo */
+.logo h1{
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
